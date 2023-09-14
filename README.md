@@ -36,8 +36,8 @@ Now that you have captured data packets using a network analyzer tool, it is you
 As an analyst, you can inspect network traffic and network data to determine what is causing network-related issues during cybersecurity incidents. Later in this course, you will demonstrate how to manage and resolve incidents. For now, you only need to analyze the situation. 
 
 
-<h3>Part 1: Provide a summary of the problem found in the DNS and ICMP traffic log</h3>
+<h3>Security Incident Report</h3>
 The UDP protocol reveals that the DNS was unreachable; could not retrieve the IP address. This is based on the results of the network analysis, which show that the ICMP echo reply returned the error message: udp port 53 is unreachable. The port noted in the error message is used for DNS service. The most likely issue is that DNS was unable to pick up the service, which led to the error message.
-<h3>Part 2: Explain your analysis of the data and provide at least one cause of the incident</h3>
+
 The incident occurred at 1:23 p.m. Customers were trying to access the website but were unable to, so they reported the incident, indicating that an error “destination port unreachable” was the outcome after the loading process. During the investigation, the IT department first tried to access the website and received the same error, then used a network packet analyzer: ICMP which provided details about the incident. There was no service being picked up by the receiving DNS port, as indicated by the ICMP error message “udp port 53 unreachable. The DNS server might be down due to a successful Denial of Service attack or a misconfiguration.
 
